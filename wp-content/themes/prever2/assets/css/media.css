@@ -1,0 +1,348 @@
+@media (min-width: 0px) and (max-width: 767px) {
+    .main-banner .mask .main-banner__text .main-banner__description {
+        font-size: 18px;
+        padding: 0;
+        width: 100%!important;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 0%;
+        top: 0;
+        bottom: 0;
+      }
+      #section04 h1 {
+          color: #fff;
+      }
+
+      .text-dis h6 img {
+        width: 4.5%;
+    }
+
+      .main-banner__description h1 {
+        font-size: 35px;
+    }
+    .centro-text{
+        width: 100%;
+    }
+
+    .item-slider img {
+        width: 5%;
+    }
+
+    .centro{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .text-dis{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .centro-flex{display: block;}
+
+    .card-item2{
+        width: auto;
+        margin-left: 0;
+        margin-bottom: 10%;
+    }
+
+    .first img {
+        width: 10%;
+    }
+    .map {
+
+        margin-top: 10%;
+    }
+
+    .noticias {
+        background: url(../images/noticias.png);
+        
+    height: 60vh;
+
+        background-size: cover;
+        width: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        background-position-x: center;
+    }
+
+    .noticias-text h3 {
+
+        text-align: center;
+    }
+
+    .noticias-text h2 {
+
+        text-align: center;
+    }
+
+    .noticias-text h3 {
+
+        font-size: 30px;
+        margin-bottom: 15%;
+    }
+    .noticias-text p {
+
+        text-align: center;
+    }
+
+    .noticias-text h3::after {
+
+        left: 32%;
+    }
+    .card-orbituario {
+        width: auto;
+        margin-bottom: 5%;
+      
+    }
+
+    .footer-flex{
+        display: block;
+    }
+
+    .nav-footer{
+        display: block;
+        width: auto;
+    }
+
+    footer{
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .duelo-img img {
+        width: 100%;
+    }
+
+    .duelo-flex{
+        display: block;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    section{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .noticias-text{
+        width: 100%;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .orbituarios p {
+
+        padding: 8px;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    .btn-1 {
+ 
+        margin-left: -9px;
+    }
+
+    ul.nav.nav-tabs .nav-item .nav-link {
+        color: #9e9e9e;
+        font-size: 22px;
+    }
+
+    .about{
+        display: block;
+    }
+    .about-text{
+        width: auto;
+    }
+
+    .about-img img{
+
+    width: 100%;
+
+    }
+
+    .nav-item a {
+        color: #000;
+    }
+    .header__main {
+        display: flex;
+        padding: 1.5rem 0.8rem;
+    }
+
+    .card-flex{
+        display: block;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .card-services{
+        display: block; 
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .logo-main img{
+        width: 100%;
+    }
+
+    .about-text {
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .card-item{
+        width: auto;
+    }
+    .card-orbituario h2::after {
+
+        left: 30%;
+ 
+    }
+    .card-orbituario img {
+        width: 35%;
+    }
+    .map-text{
+        margin-top: 0;
+    }
+    .buttons-header {
+        position: absolute;
+        z-index: 999;
+        bottom: 0;
+        top: 60%;
+    }
+
+    .nav__menu.--is-open {
+        transform: translate(0, 0);
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.here{
+    margin-left: 15%;
+}
+
+iframe{
+    width: 100%;
+}
+
+.card-item2 {
+    margin-left: 0px;
+}
+.centro-flex{
+    display: block;
+}
+.buttons-header {
+
+    top: 60%;
+}
+
+ul.nav.nav-tabs .nav-item .nav-link{
+    font-size: 20px;
+}
+
+.btn-white a{
+    font-size: 10.5px;
+}
+
+.card-orbituario h2::after{
+    left: 22%;
+}
+
+.card-item{
+    margin-left: 0;
+}
+
+button.btn-collapse{
+    align-items: center;
+}
+
+.card-services {
+
+  padding-right: 0px; 
+  padding-left: 0px;
+}
+.blog h3:after{
+    display: none;
+}
+
+.about{
+    display: block;
+}
+.about-text{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.map-text{
+    margin-top: 0;
+}
+
+.centro-text{
+    width: 100%;
+}
+.nav-footer {
+
+    width: 70%;
+}
+.footer-logo img {
+    width: 200px;
+}
+
+.card-flex {
+
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.noticias {
+    background: url(../images/noticias.png);
+    height: 54vh;
+    background-size: cover;
+}
+
+.about-img img{
+    width: 100%;
+}
+
+.nav-item a {
+    color: #000;
+}
+
+
+.nav-item{
+    justify-content: center;
+}
+
+.about {
+
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.side-menu .main-menu {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.side-menu .main-menu > li > a {
+    font-size: 26px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px){
+
+}
