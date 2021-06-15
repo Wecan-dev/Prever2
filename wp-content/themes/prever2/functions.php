@@ -83,7 +83,7 @@ function theme_customize_register($wp_customize)
 		'section' => 'about',
 		'settings' => 'about_subtitulo',
   )));
-  
+
 
 	$wp_customize->add_setting('about_contenido', array(
 		'default' => ''
@@ -135,7 +135,7 @@ function theme_customize_register($wp_customize)
 
 
   $wp_customize->add_section('section4', array(
-		'title' => 'Sección #4',
+		'title' => 'Servicio directo',
 		'panel' => 'panel1'
   ));
   
@@ -159,7 +159,21 @@ function theme_customize_register($wp_customize)
 		'section' => 'section4',
 		'settings' => 'section4_subtitulo',
   )));
+$wp_customize->add_setting('section4_imagen');
 
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'section4_imagen_control', array(
+		'label' => 'Imagen Grande',
+		'section' => 'section4',
+		'settings' => 'section4_imagen'
+  )));
+	
+	$wp_customize->add_setting('section4_mobile_imagen');
+
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'section4_mobile_imagen_control', array(
+		'label' => 'Imagen Pequeña',
+		'section' => 'section4',
+		'settings' => 'section4_mobile_imagen'
+  )));
 
   $wp_customize->add_section('noticias', array(
 		'title' => 'Noticias',
@@ -197,6 +211,14 @@ function theme_customize_register($wp_customize)
     'settings' => 'noticias_contenido',
     'type' => 'textarea'
 	)));
+	
+	$wp_customize->add_setting('noticias_imagen');
+
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'noticias_imagen_control', array(
+		'label' => 'Imagen',
+		'section' => 'noticias',
+		'settings' => 'noticias_imagen'
+  )));
 
 
 	$wp_customize->add_section('orbituarios', array(

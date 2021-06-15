@@ -54,7 +54,79 @@ $('.single-item').slick({
   ]
 });
 
+$('.main-slider__mobile').slick({
+    dots: false,
+    autoplaySpeed: 6000,
+	      arrows: true,
+    slidesToScroll: 1,
+	    slidesToShow: 3,
+	 adaptiveHeight: true,
+    responsive: [
+		{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+    breakpoint: 700,
+    settings: {
+      arrows: true,
+      dots: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+		 adaptiveHeight: true
+    }
+  },
+		{
+    breakpoint: 320,
+    settings: {
+      arrows: true,
+      dots: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+		 adaptiveHeight: true
+    }
+  }
+  ]});
 
+$('.main-slider__mobile1').slick({
+    dots: false,
+    autoplaySpeed: 6000,
+	      arrows: true,
+    slidesToScroll: 1,
+	    slidesToShow: 3,
+	 
+    responsive: [
+		{
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+    breakpoint: 700,
+    settings: {
+      arrows: true,
+      dots: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+	
+    }
+  },
+		{
+    breakpoint: 320,
+    settings: {
+      arrows: true,
+      dots: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+	
+    }
+  }
+  ]});
 
 $(function () {
   $(window).scroll(function () {
@@ -73,3 +145,17 @@ responsiveBtnIcon.addEventListener("click", () => {
   responsiveBtnIcon.classList.toggle("--is-open");
   navMenu.classList.toggle("--is-open");
 });
+
+
+$(".btn-collapse").click(function() {
+  var next = $(this).next();
+  $(".collapse").not(next).slideUp();
+  next.slideToggle();
+});
+
+$('.text-left').click(function(){
+	$('.li-hover-tabs').removeClass('active');
+	$('.text-left').removeClass('active');
+	$(this).addClass('active');
+	$(this).parent().parent('.li-hover-tabs').addClass('active');
+})

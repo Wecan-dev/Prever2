@@ -1,10 +1,10 @@
-<section id="section05" class="about">
-	<div id="about" class="about-text">
+<section id="about" class="about">
+	<div  class="about-text">
 		<h2>
 			<?php echo get_theme_mod('about_titulo');?>
 		</h2>
 		
-		<p style="font-weight: bold; margin-bottom: 3%;">
+		<p class="about_subtitle">
 		<?php echo get_theme_mod('about_subtitulo');?>
 
 		</p>

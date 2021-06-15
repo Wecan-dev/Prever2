@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-  <?php wp_head(); ?>
-    <title>Prever</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siempre</title>
+   
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/images/red.png" />
 	<link  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!--===============================================================================================-->
+	  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       type="text/css"
       href="<?php echo get_template_directory_uri(); ?>/assets/vendor/bootstrap/css/bootstrap.css"
     />
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
@@ -49,12 +53,12 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="<?php echo get_template_directory_uri(); ?>/assets/vendor/slick/slick.css"
+      href="<?php echo get_template_directory_uri(); ?>/assets/css/slick.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="<?php echo get_template_directory_uri(); ?>/assets/vendor/slick/slick-theme.css"
+      href="<?php echo get_template_directory_uri(); ?>/assets/css/slick-theme.css"
     />
     <!--===============================================================================================-->
     <link
@@ -67,12 +71,17 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/media.css" />
     <!--===============================================================================================-->
+	    <?php wp_head(); ?>
   </head>
 
   <body>
+	  
+	  <div class="main-content__global">
+		  
+	  
     <!-- header fixed -->
     <header class="header__main navbar-me back container-fluid">
-      <a class="logo-main"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="logo" /> </a>
+      <a class="logo-main"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-blanco.png" alt="logo" /> </a>
 
       <button class="responsive-menu-btn">
         <svg
@@ -100,25 +109,33 @@
       </button>
       <nav class="nav__menu">
         <div class="nav-item">
-          <a class="nav-link" href="#about">Quiénes somos</a>
+          <a class="nav-link nav-scrolling" href="#about">Quiénes somos</a>
         </div>
         <div class="nav-item">
-          <a class="nav-link" href="#products">Productos y servicios</a>
+          <a class="nav-link nav-scrolling" href="#products">Productos y Servicios</a>
         </div>
         <div class="nav-item">
-          <a class="nav-link" href="#orbituarios">Obituarios</a>
+          <a class="nav-link nav-scrolling" href="#orbituarios">Obituarios</a>
         </div>
         <div class="nav-item">
-          <a class="nav-link" href="#duelo">Ayuda al duelo</a>
+          <a class="nav-link nav-scrolling"  href="#duelo">Ayuda al duelo</a>
         </div>
         <div class="nav-item">
-            <button class="contact"> <a href="#"></a>  Contáctanos</button>
+			<button type="button" class="contact" data-toggle="modal" data-target=".bd-example-modal-lg">
+ 				CONTÁCTANOS
+			</button>
+		
+
+
         </div>
 		<div class="buttons-header d-block d-sm-none">
 			<button class="btn btn-1 btn-sep fa-phone"><p><a href=""> <span style="font-size: 12px;">¿Necesita reportar un servicio?</span>  <br> <span style="font-size: 11px;">Línea Gratuita Nacional</span>  <br> <span style="font-size: 16px;">018000 518910</span> </a></p></button>
-			<button class="btn btn-2 btn-sep2 fa-phone"><p><a href=""> <span style="font-size: 11px;">Tienda de la Memoria</span>   </a></p></button>
+			<button style="position: relative;" class="btn btn-2 btn-sep2 fa-phone"><p><a href=""> <span style="font-size: 11px;">Tienda de la Memoria</span>   </a></p></button>
 			<button class="btn btn-3 btn-sep3 fa-phone"><p><a href=""> <span style="font-size: 11px;">Centros Memoriales <br> y Funerarias</span>   </a></p></button>
 		</div>
       </nav>
     </header>
     <div href="#" class="toTop"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/top.png" alt=""></div>
+		  
+		  
+		

@@ -3,25 +3,112 @@
  <?php echo get_theme_mod('section4_titulo');?>
 	
  </h2>
-
- <h3>
+<div class="d-flex justify-content-center" style="width:100%;">
+	 <h3>
 	 <?php echo get_theme_mod('section4_subtitulo');?>
  </h3>
- <div class="card-flex">
- <?php $args = array('post_type' => 'section4', 'posts_per_page' => -1); ?>
-          <?php $loop = new WP_Query($args); ?>
-          <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-	<div class="card-item2">
-		<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
-		<div class="card-body card-fondo">
-		<h6>    <?php the_title(); ?></h6>
-		<p><?php the_content(); ?></p>
-		<hr>
-		<p> <a href="#">Adquirir servicio <img class="flecha" src="<?php echo get_template_directory_uri(); ?>/assets/images/flecha.png" alt=""></a>	</p>	 
-		</div>
 	</div>
 
-	<?php endwhile ?>
+ <div class="card-flex">
+	
+	 
+	 <div class="card-services__img">
+							
+		 <div class="img-destktop-banner">
+			 <img src="<?php echo get_theme_mod('section4_imagen');?>">
+		 </div>
 
+		 <div class="img-mobile-banner">
+			  <img src="<?php echo get_theme_mod('section4_mobile_imagen');?>">
+		 </div>
+		 
+		<a class="btn-cotizar" href="" class="contact" data-toggle="modal" data-target=".bd-example-modal-lg">COTIZAR</a>
+	 </div>
+	 
 </div>
 </section>
+
+<style>
+	.btn-cotizar{
+		background: #e06e37;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		color: #fff;
+		position: absolute;
+		top: 70%;
+		right: 4%;
+		font-weight: 700;
+	}
+	.btn-cotizar:hover{
+	
+		color: #fff;
+		
+	}
+	.card-services__img  {
+		width: 100%;
+		height: 450px;
+		position: relative;
+	}
+	.img-destktop-banner, .img-mobile-banner{
+		width:100%;
+		height: 100%;
+	}
+	.card-services__img .img-destktop-banner img,.card-services__img .img-mobile-banner img{
+		width: 100%;
+		height: 100%;
+	}
+	.img-mobile-banner{
+		display: none;
+	}
+	@media (min-width: 0px) and (max-width: 575px){
+		.btn-cotizar {
+			right: 50%;
+			font-size: 12px;
+			transform: translate(50%);
+		}
+		.img-destktop-banner{
+			display: none;
+		}
+		.img-mobile-banner{
+			display: block;
+		}
+			.card-services__img{
+			    height: calc(75vh + 80px)!important;
+    min-height: 640px;
+			margin-top: 5rem;
+		}
+	}
+	
+	@media (min-width: 576px) and (max-width: 767px){
+		.btn-cotizar {
+			right: 50%;
+			font-size: 12px;
+			transform: translate(50%);
+		}
+			.img-destktop-banner{
+			display: none;
+		}
+		.img-mobile-banner{
+			display: block;
+		}
+			
+		.card-services__img{
+			    height: calc(80vh + 80px)!important;
+    			min-height: 640px;
+		}
+	}
+	
+	@media (min-width: 768px) and (max-width: 911px){
+		.card-services__img {
+			width: 100%;
+			height: auto;
+		}
+			.btn-cotizar {
+			
+			font-size: 10px;
+				
+		}
+	}
+		
+</style>
